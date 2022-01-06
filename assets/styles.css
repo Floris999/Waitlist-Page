@@ -1,18 +1,39 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+
 body {
     background-color: #FFDC88;
+    font-family: 'Open Sans', sans-serif;
 }
 
-nav ul {
+/* start of nav style */
+nav {
+    flex-basis: 100%;
+    padding: 30px 10px;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+}
+
+nav li {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    flex: 1;
+    display: inline;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+ul {
+    display: inline;
     width: 100%;
 }
 
+/* end of nav style */
+
 .card-box {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    flex-direction: row;
     height: 800px;
     position: absolute;
     top:0;
@@ -26,14 +47,58 @@ nav ul {
 }
 
 .main-box-1 {
-    flex: 3;
+    margin: 0 50px;
 }
 
 .main-box-2 {
-    flex: 3;
+    margin: 0 50px;
 }
 
+.image {
+    background-image: url("/assets/img/host.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #4977e8;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-button {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffa497;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fa-rocket {
+    font-size: 26px !important;
+}
+
+
 @media only screen and (max-width: 1200px) {
+    
+    nav {
+        display: none;
+    }
+    
     .card-box {
         margin: auto 10px;
     }
