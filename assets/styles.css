@@ -1,10 +1,24 @@
 /* import font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+/* import h2 font style */
 
 
 body {
     background-color: #FFDC88;
     font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-weight: 300;
 }
 
 /* start of nav style */
@@ -32,15 +46,17 @@ ul {
 
 .card-box {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     flex-direction: row;
-    height: 800px;
+    justify-content: space-evenly;
     position: absolute;
+    height: 800px;
+    width: 80%;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto 240px;
+    margin: auto 170px;
     border-radius: 40px;
     background-color: #F8F4E8;
 
@@ -55,7 +71,7 @@ ul {
 }
 
 .image {
-    background-image: url("/assets/img/host.png");
+    background-image: url("/assets/img/host.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -79,6 +95,25 @@ button {
 .contact-button {
     font-family: 'Open Sans', sans-serif;
     background-color: #ffa497;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input {
+    font-family: 'Open Sans', sans-serif;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #4977e8;
     border: none;
     border-radius: 10px;
     color: white;
