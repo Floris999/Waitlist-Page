@@ -135,6 +135,19 @@ input {
     }
     
     .card-box {
-        margin: auto 10px;
+      display: inline-block;
+      margin: 0px 0px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .image {
+        height: 250px;
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .submit {
+        margin: 10px 5px;
     }
 }
